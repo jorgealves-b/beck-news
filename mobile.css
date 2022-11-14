@@ -9,6 +9,7 @@
 :root {
     --font-p: 'Lato', sans-serif;
     --font-h: 'Oswald', sans-serif;
+    --font-header: 'Cabin', sans-serif;
 
     --color-h: hsl(243, 87%, 12%);
     --color-shadow: hsl(238, 22%, 44%);
@@ -21,9 +22,42 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,700;1,500;1,700&display=swap');
+
 body {
     background-color: var(--color-h);
     transition: all ease-in-out;
+}
+
+header  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem ;
+}
+
+header h1 {
+    font-family: var(--font-header);
+    font-weight: 600;
+    color: var(--Light-Gray);
+
+}
+
+header span {
+    font-size: 1.8em;
+    color: rgba(255, 0, 0, 0.699)
+    
+}
+
+.menu-btn {
+    width: 40px;
+    filter: invert(1);
+}
+
+header ul {
+    list-style: none;
+    display: none;
 }
 main {
     display: flex;
